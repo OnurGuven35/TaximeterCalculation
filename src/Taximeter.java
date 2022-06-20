@@ -11,20 +11,18 @@ public class Taximeter {
 
         double km, perKm, first, amount;
 
-        // İlk olarak kullanıcıdan değer alıyoruz.
+        // İlk olarak kullanıcıdan değer alıyoruz ve bize verilen değerlere göre formül oluşturuyoruz.
 
         System.out.println();
         System.out.print("Gideceginiz KM'yi giriniz : ");
         km = input.nextDouble();
         System.out.println();
 
-        // Bize verilen değerlere göre formül oluşturuyoruz.
-
         perKm = 2.20;
         first = 10;
         amount = first + (km * perKm);
 
-        // Son olarak çıkan ücreti sorgulayarak oluşan değeri ekrana yazdırıyoruz.
+        // Daha sonra çıkan ücreti sorgulayarak oluşan değeri ekrana yazdırıyoruz.
 
         double total = (amount < 20) ? 20 : amount;
 
