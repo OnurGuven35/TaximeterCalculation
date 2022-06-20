@@ -28,7 +28,6 @@ public class Taximeter {
 
         double total = (amount < 20) ? 20 : amount;
 
-        System.out.print("Toplam Odenecek Ucret : " + total);
-        System.out.println();
+        System.out.println("Toplam Odenecek Ucret : " + total);
     }
 }
